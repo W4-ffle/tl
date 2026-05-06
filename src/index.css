@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background-color: #111111;
+    color: #f5f0eb;
+    overflow-x: hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* Brand colour utilities — Tara Lodge red + gold palette */
+@layer utilities {
+  /* Primary red — from logo mark */
+  .text-brand-red   { color: #8B1A1A; }
+  .bg-brand-red     { background-color: #8B1A1A; }
+  .border-brand-red { border-color: #8B1A1A; }
+
+  /* Secondary gold — from logo "LODGE" letterforms */
+  .text-brand-gold   { color: #C09A30; }
+  .bg-brand-gold     { background-color: #C09A30; }
+  .border-brand-gold { border-color: #C09A30; }
+
+  /* Hover variants */
+  .hover\:bg-brand-red:hover   { background-color: #A52020; }
+  .hover\:bg-brand-gold:hover  { background-color: #D4AC3A; }
+}
